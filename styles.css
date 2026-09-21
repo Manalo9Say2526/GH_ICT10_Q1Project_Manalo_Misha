@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    padding: 60px;
+    background-color: lavender;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form{
+    background-color: plum;
+    font-size: 20px;
+    padding: 60px;
+}
+
+h1{
+    background-color: lightblue;
+}

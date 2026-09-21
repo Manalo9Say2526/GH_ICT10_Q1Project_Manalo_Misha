@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Website</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg">
+        <h2>SKEWER</h2>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="receipt.html">SKILLS TEST</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    
+    <h1>SKU GENERATOR</h1>
+    <form>
+        <label>CATEGORY:</label><br>
+        <select id="category" class="form-control" maxwidth="400px">
+            <option value="PERISHABLE">Perishable</option>
+            <option value="NON-PERISHABLE">Non-Perishable</option>
+            <option value="SEMI-PERISHABLE">Semi-Perishable</option>
+        </select><br><br>
+
+       <label>PRODUCT NAME:</label><br>
+            <input type="text" id="product" placeholder="e.g Americano" class="form-control"><br><br>
+        
+        <label>STOCK QUANTITY:</label><br>
+            <input type="number" id="quantity" placeholder="e.g. 50" class="form-control"><br><br>
+
+        <button type="button" class="btn btn-warning" py-click="generate_SKU">GENERATE SKU</button>
+    </form>
+    
+    <footer class="bg-dark text-white fixed-bottom text-center">
+        <p>SKU GENERATOR 1ST- QUARTER</p>
+    </footer>
+    <div id="show"></div>
+    <py-script src="main.py"></py-script>
+
+
+</body>
+</html>
